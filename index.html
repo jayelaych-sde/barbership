@@ -39,15 +39,17 @@
                 </li>
               </ul>
               <div class="nav__search">
-                <figure class="nav__search--img">
-                  <i class="fa-solid fa-magnifying-glass"></i>
-                </figure>
-                <input
-                  type="text"
-                  name=""
-                  class="nav__search--input"
-                  placeholder="Search..."
-                />
+                <div class="nav__search--input--container">
+                    <figure class="nav__search--img">
+                      <i class="fa-solid fa-magnifying-glass"></i>
+                    </figure>
+                    <input
+                      type="text"
+                      name=""
+                      class="nav__search--input"
+                      placeholder="Search..."
+                    />
+                </div>
               </div>
               <ul class="nav__links">
                 <li class="nav__link login">
@@ -145,7 +147,7 @@
           <div class="container">
             <div class="row">
               <div class="header__video--wrapper">
-                <video id="header__video" autoplay muted loop preload="auto">
+                <video id="header__video" autoplay muted loop playsinline preload="auto">
                   <source src="./assets/video.mp4" type="video/mp4" />
                 </video>
                 <button class="mute-button" id="mute-button">
