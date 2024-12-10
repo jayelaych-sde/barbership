@@ -83,7 +83,7 @@ nav {
 
 .nav__link {
   font-size: 16px;
-  font-weight: 600;
+  font-weight: 500;
   margin: 0 16px;
 }
 
@@ -323,10 +323,13 @@ video {
   width: 100%;
   padding: 24px 0 64px;
   color: white;
+  font-weight: 700;
+  letter-spacing: 0.03em;
 }
 
 .header__description--para {
   font-size: 20px;
+  font-weight: 300;
   line-height: 2;
   width: 100%;
   max-width: 480px;
@@ -353,16 +356,49 @@ video {
   letter-spacing: 0.08em;
   border: none;
   border-radius: 8px;
-  background-color: #984447;
+  background-color: #008dd5;
 }
 
 .book-btn:hover {
-  background-color: #5d2a2c;
+  background-color: #006191;
   transform: scale(1.01);
 }
 
 .book-btn:active {
   transform: scale(0.99);
+}
+
+/* ABOUT */
+
+#about .full-width--wrapper {
+  background-color: #020300;
+}
+
+#about .row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 56px;
+}
+
+.about__description {
+  width: 100%;
+}
+
+.about__title {
+  font-size: 36px;
+  text-align: center;
+  color: white;
+}
+
+.about__description--para {
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 2.5;
+  width: 100%;
+  padding: 64px;
+  color: white;
+  text-align: center;
 }
 
 /* CONTACT */
@@ -556,6 +592,11 @@ video {
 
   .header__description--title {
     padding-bottom: 48px;
+  }
+
+  .about__description--para {
+    font-size: 18px;
+    padding: 48px 0 0 0;
   }
 
   .contact__wrapper {

@@ -21,13 +21,13 @@
                 <img src="./assets/logo.avif" alt="" class="nav__logo--img" />
               </div>
               <ul class="nav__links">
-                <li class="nav__link"><a href="">Home</a></li>
+                <li class="nav__link"><a href="#">Home</a></li>
                 <li class="nav__link"><a href="">Haircuts</a></li>
                 <li class="nav__link dropdown">
                   <a href="">More...</a>
                   <ul class="nav__dropdown--menu">
                     <li class="nav__link nav__dropdown--link">
-                      <a href="">About</a>
+                      <a href="#about">About</a>
                     </li>
                     <li class="nav__link nav__dropdown--link">
                       <a href="#contact">Contact</a>
@@ -40,15 +40,15 @@
               </ul>
               <div class="nav__search">
                 <div class="nav__search--input--container">
-                    <figure class="nav__search--img">
-                      <i class="fa-solid fa-magnifying-glass"></i>
-                    </figure>
-                    <input
-                      type="text"
-                      name=""
-                      class="nav__search--input"
-                      placeholder="Search..."
-                    />
+                  <figure class="nav__search--img">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                  </figure>
+                  <input
+                    type="text"
+                    name=""
+                    class="nav__search--input"
+                    placeholder="Search..."
+                  />
                 </div>
               </div>
               <ul class="nav__links">
@@ -124,10 +124,14 @@
                     <a class="menu__link" onclick="closeMenu()">Haircuts</a>
                   </li>
                   <li class="menu__list">
-                    <a class="menu__link" onclick="closeMenu()">About</a>
+                    <a href="#about" class="menu__link" onclick="closeMenu()"
+                      >About</a
+                    >
                   </li>
                   <li class="menu__list">
-                    <a class="menu__link" onclick="closeMenu()">Contact</a>
+                    <a href="#contact" class="menu__link" onclick="closeMenu()"
+                      >Contact</a
+                    >
                   </li>
                   <li class="menu__list">
                     <a
@@ -147,7 +151,14 @@
           <div class="container">
             <div class="row">
               <div class="header__video--wrapper">
-                <video id="header__video" autoplay muted loop playsinline preload="auto">
+                <video
+                  id="header__video"
+                  autoplay
+                  muted
+                  loop
+                  playsinline
+                  preload="auto"
+                >
                   <source src="./assets/video.mp4" type="video/mp4" />
                 </video>
                 <button class="mute-button" id="mute-button">
@@ -181,6 +192,42 @@
           </div>
         </div>
       </section>
+      <section id="about">
+        <div class="full-width--wrapper">
+          <div class="container">
+            <div class="row">
+              <div class="about__description">
+                <h2 class="about__title">
+                  Welcome to
+                  <span class="text-color"
+                    >Marty's Barbering Establishment</span
+                  >
+                </h2>
+                <p class="about__description--para">
+                  Welcome to Marty's barbering establishment, where the art of
+                  grooming comes to life. As a professional barber, I am
+                  dedicated to providing top-quality grooming services in
+                  Stockton. My journey in the world of barbering began in my
+                  family's shop, where I honed my skills and developed a deep
+                  appreciation for the craft. Since obtaining my barber license
+                  20 years ago, I have been committed to ensuring that every
+                  client leaves with a refined and polished look. At Barbership,
+                  it's not just about a haircut or a shave - it's about being
+                  part of a community that appreciates the art of grooming and
+                  the camaraderie that comes with it.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="haircuts">
+        <div class="full-width--wrapper">
+          <div class="container">
+            <div class="row"></div>
+          </div>
+        </div>
+      </section>
       <section id="contact">
         <div class="full-width--wrapper">
           <div class="container">
@@ -189,7 +236,7 @@
                 <h2 class="contact__title">Get in Touch</h2>
                 <p class="contact__info--phone">
                   Have a question or need assistance? Reach out to our dedicated
-                  member at <strong><br>(209) 340-9303</strong></br></strong>
+                  member at <strong><br />(209) 340-9303</strong>
                 </p>
                 <h3 class="contact__info--address">
                   5759 Pacific Ave. #145 Stockton, CA 95207
