@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <script
+      src="https://kit.fontawesome.com/d760ca934c.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./index.js" defer></script>
+    <title>Barbership</title>
+  </head>
+  <body>
+    <section id="landing">
+      <div class="row">
+        <nav>
+          <div class="nav__container">
+            <div class="nav__row">
+              <div class="nav__logo">
+                <img src="./assets/logo.avif" alt="" class="nav__logo--img" />
+              </div>
+              <ul class="nav__links">
+                <li class="nav__link"><a href="">Home</a></li>
+                <li class="nav__link"><a href="">Haircuts</a></li>
+                <li class="nav__link dropdown">
+                  <a href="">More...</a>
+                  <ul class="nav__dropdown--menu">
+                    <li class="nav__link nav__dropdown--link">
+                      <a href="">About</a>
+                    </li>
+                    <li class="nav__link nav__dropdown--link">
+                      <a href="#contact">Contact</a>
+                    </li>
+                    <li class="nav__link nav__dropdown--link">
+                      <a href="">FAQ</a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+              <div class="nav__search">
+                <figure class="nav__search--img">
+                  <i class="fa-solid fa-magnifying-glass"></i>
+                </figure>
+                <input
+                  type="text"
+                  name=""
+                  class="nav__search--input"
+                  placeholder="Search..."
+                />
+              </div>
+              <ul class="nav__links">
+                <li class="nav__link login">
+                  <a href="" class="login__link"
+                    ><figure class="login__img">
+                      <i class="fa-solid fa-user"></i>
+                    </figure>
+                    Log In</a
+                  >
+                </li>
+                <li class="nav__link"><a href="">Cart</a></li>
+              </ul>
+
+              <button class="btn__menu" onclick="openMenu()">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="btn__menu--svg"
+                >
+                  <line x1="3" y1="12" x2="21" y2="12"></line>
+                  <line x1="3" y1="6" x2="21" y2="6"></line>
+                  <line x1="3" y1="18" x2="21" y2="18"></line>
+                </svg>
+              </button>
+
+              <div class="menu__backdrop">
+                <button
+                  class="btn__menu btn__menu--close"
+                  onclick="closeMenu()"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="light___StyledCloseIcon-lj69nl-14 fASujC"
+                  >
+                    <line x1="18" y1="6" x2="6" y2="18"></line>
+                    <line x1="6" y1="6" x2="18" y2="18"></line>
+                  </svg>
+                </button>
+                <ul class="menu__links">
+                  <li class="menu__list menu__login">
+                    <a
+                      href="#"
+                      class="menu__link login__link"
+                      onclick="closeMenu()"
+                      ><figure class="login__img">
+                        <i class="fa-solid fa-user"></i>
+                      </figure>
+                      Log In</a
+                    >
+                  </li>
+                  <li class="menu__list">
+                    <a href="#features" class="menu__link" onclick="closeMenu()"
+                      >Home</a
+                    >
+                  </li>
+                  <li class="menu__list">
+                    <a class="menu__link" onclick="closeMenu()">Haircuts</a>
+                  </li>
+                  <li class="menu__list">
+                    <a class="menu__link" onclick="closeMenu()">About</a>
+                  </li>
+                  <li class="menu__list">
+                    <a class="menu__link" onclick="closeMenu()">Contact</a>
+                  </li>
+                  <li class="menu__list">
+                    <a
+                      class="menu__link menu__link--primary"
+                      onclick="closeMenu()"
+                      >FAQ</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </div>
+      <header>
+        <div class="full-width--wrapper">
+          <div class="container">
+            <div class="row">
+              <div class="header__video--wrapper">
+                <video id="header__video" autoplay muted loop preload="auto">
+                  <source src="./assets/video.mp4" type="video/mp4" />
+                </video>
+                <button class="mute-button" id="mute-button">
+                  <i class="fa-solid fa-volume-high"></i>
+                </button>
+              </div>
+              <div class="header__description">
+                <h1 class="header__description--title">
+                  Welcome to <span class="text-color">Barbership</span>
+                </h1>
+                <p class="header__description--para">
+                  Your friendly neighborhood barber! Our skilled barber provides
+                  top-notch grooming services to help you look your best.
+                  Experience the difference at Barbership!
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+    </section>
+    <main>
+      <section id="book-online">
+        <div class="full-width--wrapper">
+          <div class="container">
+            <div class="row">
+              <div class="book__wrapper">
+                <button class="book-btn">Book Now</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="contact">
+        <div class="full-width--wrapper">
+          <div class="container">
+            <div class="row">
+              <div class="contact__wrapper">
+                <h2 class="contact__title">Get in Touch</h2>
+                <p class="contact__info--phone">
+                  Have a question or need assistance? Reach out to our dedicated
+                  member at <strong>(209) 340-9303</strong>
+                </p>
+                <h3 class="contact__info--address">
+                  5759 Pacific Ave. #145 Stockton, CA 95207
+                </h3>
+                <a
+                  href="https://www.instagram.com/barbershipcuts"
+                  class="contact__ig"
+                  target="_blank"
+                  ><i class="fa-brands fa-instagram"></i
+                ></a>
+                <!-- MAP API KEY AIzaSyDEhRQOryoIj9urqjhVMBpCeuBPzOFcx1Q -->
+
+                <div class="contact__map">
+                  <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3143.931183228156!2d-121.3218312873584!3d38.00206559891585!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80900c5b37b8bf91%3A0x7d1b280f9c95ecbb!2s5759%20Pacific%20Ave%20%23145%2C%20Stockton%2C%20CA%2095207!5e0!3m2!1sen!2sus!4v1733824730753!5m2!1sen!2sus"
+                    width="800"
+                    height="400"
+                    style="border: 0"
+                    allowfullscreen=""
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"
+                  ></iframe>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <button class="chat__btn">
+        <i class="fa-solid fa-comment"></i>
+      </button>
+    </main>
+  </body>
+</html>
