@@ -629,6 +629,11 @@ video {
     align-items: center;
   }
 
+  .menu__list {
+    padding: 12px 0;
+    font-size: 28px;
+  }
+
   .contact__wrapper {
     width: 100%;
   }
@@ -654,11 +659,6 @@ video {
 
   .nav__logo--img {
     width: 100%;
-  }
-
-  .menu__list {
-    padding: 12px 0;
-    font-size: 28px;
   }
 
   .btn__menu--close {
