@@ -404,6 +404,8 @@ video {
   width: 100%;
   max-width: 720px;
   line-height: 2;
+  -webkit-text-fill-color: #fff; /* Ensures consistent color on iOS */
+  /* -webkit-tap-highlight-color: transparent; Removes tap highlight */
 }
 
 .contact__info--address {
