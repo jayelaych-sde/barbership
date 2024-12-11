@@ -239,6 +239,7 @@ nav {
   visibility: hidden;
   opacity: 0;
   transform: translateX(100%);
+  overflow-y: hidden;
 }
 
 .menu--open .menu__backdrop {
@@ -300,16 +301,15 @@ video {
   color: white;
   opacity: 0;
   background-color: transparent;
-  right: 16px;
-  bottom: 16px;
+  right: 0;
+  bottom: 0;
+  padding: 16px;
   border: none;
   cursor: pointer;
   pointer-events: auto;
   transition: all 300ms ease;
   z-index: 1000;
-}
-.mute-button:active {
-  background-color: transparent;
+  text-shadow: 2px 2px 8px #2a2d34c2;
 }
 
 .mute-button.visible {
@@ -602,6 +602,16 @@ video {
     padding-bottom: 48px;
   }
 
+  .mute-button {
+    font-size: 24px;
+    padding: 16px;
+    bottom: 4px;
+  }
+
+  .mute-button:active {
+    -webkit-tap-highlight-color: #2a2d345c;
+  }
+
   .about__description--para {
     font-size: 18px;
     padding: 48px 0 0 0;
@@ -680,6 +690,11 @@ video {
 
   .header__description--para {
     font-size: 16px;
+  }
+
+  .mute-button {
+    font-size: 20px;
+    padding: 8px;
   }
 
   .contact__wrapper {
