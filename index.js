@@ -49,6 +49,7 @@ if (isMobile) {
   // Prevent hiding the button when it's clicked
   muteButton.addEventListener("click", (event) => {
     event.stopPropagation(); // Prevent video click event
+    showMuteButton();
     toggleMute();
   });
 } else {
